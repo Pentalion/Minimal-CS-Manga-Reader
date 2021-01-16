@@ -19,6 +19,8 @@ jobs:
     - name: Get tag name
       uses: olegtarasov/get-tag@v2
       id: tagName
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
     # Install the .NET Core workload
     - name: Install .NET Core
