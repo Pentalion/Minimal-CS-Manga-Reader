@@ -145,12 +145,12 @@ namespace Minimal_CS_Manga_Reader
                 });
 
             this.Events().KeyDown
-                .Where(x => x.Key.Equals(Key.Insert))
+                .Where(x => x.Key.Equals(Key.Z))
                 .Select(args => System.Reactive.Unit.Default)
                 .InvokeCommand(ViewModel.PreviousClick);
 
             this.Events().KeyDown
-                .Where(x => x.Key.Equals(Key.Delete))
+                .Where(x => x.Key.Equals(Key.X))
                 .Select(args => System.Reactive.Unit.Default)
                 .InvokeCommand(ViewModel.NextClick);
 
